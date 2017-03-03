@@ -53,5 +53,3 @@ predictNextWord <- function(phrase) {
     # 5) if nothing matches down through 2 grams, just predict "the"
     return("the")
 }  
-
-print(predictNextWord("The guy in front of me just bought a pound of bacon, a bouquet, and a case of"))
