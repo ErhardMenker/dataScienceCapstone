@@ -1,0 +1,47 @@
+---
+title: "Capstone Pitch"
+date: "March 5, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+- This app satisfies a requirement of completion for John Hopkin's Data Science Specialization
+- The task has been to use core principles of natural language processing (NLP) to train a text predictor using a corpus of text provided by John Hopkins & SwiftKey
+- This capstone has tested any completer's ability to follow fundamental data science skills including: 
+    a. Importing & cleaning data
+    b. Visualizing data to understand high level structure
+    c. Creating an algorithm to train a predictor that can be used on a user's input
+    
+
+## The Data
+
+- The data consists of over 70 million space delimited words sourced from Twitter, blogs, & the news
+- A subset of the data (200,000 line entries) were read into a Python script & cleaned systematically:
+    a. ngrams were not considered if they contained non-useful types like calendar dates or semi-colons
+    b. words were also eliminated if they didn't appear a sufficient amount of times in the corpus
+    c. ngrams (size 2 - 5) were synthesized; for each (n - 1) phrase the most frequent nth word is paired with it and exported to CSV
+    
+## The Shiny App
+
+- Read the CSVs produced from Python into a supporting R script that is sourced into the shiny app
+- The sourced in R script defines function predictNextWord(phrase) where "phrase" is an inputted text argument by a user
+    a. phrase is parsed using stringr & regular expressions by converting all text input to lower case & collapsing multiple whitespaces to 1 to match the imported data
+    b. Try to match the last 4 words of the user's data to the 5 gram data frame all the way down to matching the user's last word to the 2 gram data frame; return the entry in the second column (the last word)
+    c. If nothing matches, return "the"
+- The user turns on the predictor checkbox (allows reactivity) and inputs a phrase; when the phrase is complete, hit "predict" to see the outputted word
+    
+## The Frontier of Improvement
+
+- Methods to improve the text app for future iterations could include:
+    a. Using scalable data science software (like Hadoop) to speed clean up time and allow all of the corpus to be parsed
+    b. Spend more time cleaning the data so that a greater portion of the text is used in the outputted CSV
+    c. Use strategies to get further back words in the sentence to give more context to the predictor 
+    
+    
+    
+    
