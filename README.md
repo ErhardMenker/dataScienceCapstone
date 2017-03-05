@@ -1,4 +1,8 @@
 #### Data Science Capstone Pipeline
+
+### NOTE: contact Erhard Menker (ejmenker@gmail.com) for supplemental files that were too large...
+...to be tracked, like input CSVs
+
 # Input/ 
     - contains the 3 text files (blogs, news, & Twitter) that are read into the program to be trained  
 # Programs/
