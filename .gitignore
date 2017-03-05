@@ -7,3 +7,4 @@ Programs/rsconnect
 Programs/*.pyc
 Output/*.csv
 Output/capstoneApp/*.html
+Output/capstoneApp/*.csv

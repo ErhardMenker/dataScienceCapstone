@@ -7,6 +7,8 @@
 #    http://shiny.rstudio.com/
 #
 
+source("shinyRCode.R")
+
 library(shiny)
 
 # Define UI for application that draws a histogram

@@ -1,5 +1,3 @@
-setwd("C:/Data/Analytics_Studies/R/Data_Science_Specialization/Capstone/Output")
-
 library(stringr)
 
 ### Create a function that simulates how this text predictor will work for a given input
