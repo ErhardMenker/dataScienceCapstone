@@ -7,7 +7,7 @@
 #    http://shiny.rstudio.com/
 #
 
-source("../../Programs/shinyRCode.R")
+source("shinyRCode.R")
 
 library(shiny)
 
