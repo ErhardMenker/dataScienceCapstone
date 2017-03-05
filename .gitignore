@@ -5,3 +5,5 @@ Programs/quiz1.py
 Programs/week2.py
 Programs/rsconnect 
 Programs/*.pyc
+Output/*.csv
+Output/capstoneApp/*.html
